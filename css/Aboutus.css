@@ -1,0 +1,9 @@
+body{
+    background-color: #f9e7fa;
+}
+.container{
+    padding-top: 80px;
+}
+.navbar-brand:hover{
+    color: #DB76C3!important;
+}

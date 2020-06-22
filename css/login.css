@@ -10,7 +10,7 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f9c3fc;
+  background-color: #f9e7fa;
 }
 
 .form-signin {
@@ -42,7 +42,8 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+/*
 .form-signin input:hover {
   border-color: #080251;
   border-width: 2px;
-}
+}*/

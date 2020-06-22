@@ -1,0 +1,41 @@
+body {
+    background-color: #f9e7fa;
+    /*height: 1500px;*/
+}
+
+
+
+.countdown-timer {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    top: 30%;
+    height: 42vh;
+    width: 80%;
+}
+
+.title {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.counter {
+    position: relative;
+    text-align: center;
+    left: 15%;
+    font-size: 25px;
+    background-color: #DB76C3;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f9e7fa;
+    border-radius: 20px;
+    width: 70%;
+}
+
+
+.navbar-brand:hover {
+    color: #DB76C3 !important;
+}

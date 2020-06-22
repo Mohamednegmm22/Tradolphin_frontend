@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo/icon_trado.svg">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <title>User Profile</title>
+
+    <link rel="stylesheet" href="/css/userprofile.css">
+</head>
+
+<body>
+    <nav style=" background-color: #443D91; height: 60px;" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a style="padding-top:28px ;" class="navbar-brand" href="#">
+            <img class="mb-4 " src="/logo/icon_trado.svg" alt="" width="30" height="auto">
+            <img class="mb-4" src="/logo/text_trado.png" alt="" width="auto" height="150" style="margin-top: -10px">
+        </a>
+        <ul class="nav">
+            <li><a class="navbar-brand " href="#">Markets</a> </li>
+            <li><a class="navbar-brand " href="#">Trades</a></li>
+            <li><a class="navbar-brand " href="#">About us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container text-center" style="padding:60px; padding-top: 150px;">
+        <h1 style="text-align: left; padding-bottom: 20px;">User Profile</h1>
+
+        <div class="row">
+            <div class="card col col-md-4" style="height:100%">
+                <div class="card-body">
+                    <img src="/images/profilepitcure.jpg" alt="profilepitcure" class="profilepitcure">
+                    <h4 class="card-text mt-2">Vanessa Moni</h4>
+                    <p class="card-text">Vanessa88.Moni@gmail.com</p>
+                    <hr>
+                    <h6 style="font-weight: 400; opacity: 0.8; text-align: left;">Description</h6>
+                    <p style="text-align: justify; opacity: 0.9; font-weight: 400;">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Excepturi consectetur
+                        blanditiis ratione illum. Laboriosam, culpa voluptatum mollitia ex
+                        nobis dolorum perspiciatis repellat corrupti quasi labore nam ipsam consequuntur incidunt
+                        distinctio.</p>
+                </div>
+            </div>
+
+            <div class="card col col-md-7 offset-md-1" style="text-align: left;">
+                <div class="card-body">
+                    <h4 class="card-text" style="text-align: left;">Account Details</h4>
+                    <hr>
+                    <form>
+                        <div class="row col">
+                            <div class="form-group col">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+
+                        <div class="row col">
+                            <div class="form-group col col-md-6">
+                                <label for="exampleInputname">First name</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group col col-md-6">
+                                <label for="exampleInputname">Last name</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+
+                        <div class="row col">
+                            <div class="form-group col">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+                        <div class="form-group col col-md-6">
+                            <button type="submit" class="btn btn-outline-success">Update Account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+ 
+            <div class="card col col-md-7 offset-md-5 mt-5" style="text-align: left;">
+                <div class="card-body">
+                    <div class="row col">
+                    <div class="form-group col col-md-8">
+                        <h6 style="font-weight: 400; opacity: 0.8; text-align: left; padding-bottom: 20px;">Change Image</h6>
+                        <label for="exampleFormControlFile1">Upload:</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-group col col-md-3 offset-md-1">
+                        <img src="/images/profilepitcure.jpg" alt="profilepitcure" class="profilepitcure">
+                        <small>Current Image</small>
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
