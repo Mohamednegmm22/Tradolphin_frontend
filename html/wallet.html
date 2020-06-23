@@ -5,25 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/logo/icon_trado.svg">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../logo/icon_trado.svg">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
     <title>Wallet</title>
-    <link rel="stylesheet" href="/css/wallet.css">
+    <link rel="stylesheet" href="../css/wallet.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 
 <body>
-    <nav style=" background-color: #443D91; height: 60px;" class="navbar navbar-expand-md navbar-dark fixed-top">
-        <a style="padding-top:28px ;" class="navbar-brand" href="#">
-            <img class="mb-4 " src="/logo/icon_trado.svg" alt="" width="30" height="auto">
-            <img class="mb-4" src="/logo/text_trado.png" alt="" width="auto" height="150" style="margin-top: -10px">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #443D91;">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" style="font-family: tradingfont; font-size: 30px; " href="#">
+            <img style="position: relative; top: -9px;" class="pm-5" src="../logo/icon_trado.svg" alt="" width="35px"
+                height="auto">
+            <span style="color:#080251">TRA</span><span style="color: #DB76C3;">DOLPHIN</span>
         </a>
-        <ul class="nav">
-            <li><a class="navbar-brand " href="#">Markets</a> </li>
-            <li><a class="navbar-brand " href="#">Trades</a></li>
-            <li><a class="navbar-brand " href="#">About us</a></li>
-        </ul>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Markets</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Trades</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+
+            </form>
+        </div>
     </nav>
     <!--    <div style="padding-top: 50px;">
             <div class="header">
@@ -54,16 +73,8 @@
                     <p class="card-text" style="font-weight:500; font-size:20px;">0.00000000
                         <span class="badge badge-danger">BTC</span></p>
                     €0,00
+                </div>
 
-                </div>
-                <hr style="width: 80%; margin-left: 10%;">
-                <div class="card-body">
-                    <h6 class="card-title mb-4" style="font-weight: 300;">Lending Account</h6>
-                    <p class="card-text" style="font-weight:300; font-size:15px;">0.00000000
-                        <span class="badge badge-light">BTC</span> <br>
-                        <text style="opacity: 0.5; padding-top: -10px;">€0,00 </text>
-                    </p>
-                </div>
             </div>
         </div>
         <div class="row justify-content-center mt-5">
@@ -110,9 +121,11 @@
 
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="/js/wallet.js"></script>
+    <script src="../js/wallet.js"></script>
 </body>
 
 </html>
