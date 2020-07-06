@@ -18,38 +18,30 @@
 
 
 $(document).ready(function(){
-    var url = "http://localhost:8080/add-user";
-    $("#btn_register").click(function(){
+  
+    $("#btn_login").click(function(){
 
         var email = $("#inputEmail").val();
-        var fname = $("#inputFname").val();
-        var lname = $("#inputLname").val();
         var password = $("#inputPassword").val();
         var confirm_password = $("#confirmPassword").val();
-        if(email == "" || fname == "" || lname == ""|| password == ""|| confirm_password == ""){
+        if(email == ""|| password == ""){
             alert("check the valiable items");
             return;
         }
-        if(password != confirm_password){
-            alert("Password is incorrect!");
-            return;
-        }
         var settings = {
-            "url": "http://localhost:8080/api/auth/signup",
+            "url": "http://localhost:8080/api/auth/login",
             "method": "POST",
             "timeout": 0, 
             "data": {
               "email": email,
-              "firstName": fname,
-              "lastName": lname,
               "password": password
             }
         };
         $.ajax(settings).done(function (data) {
-            
             if(data.success == true){
-                
-                document.location = "login.html";
+               
+                localStorage.setItem("email", data.message);
+                document.location = "dashboard.html";
             }else{
                 return;
             }

@@ -1,101 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../logo/icon_trado.svg"
+    />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../vendor/bootstrap/css/bootstrap-grid.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="../logo/icon_trado.svg">  
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link href="../css/register.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <title>Register</title>
+  </head>
 
-  <link href="../css/register.css" rel="stylesheet">
-  <script src="../js/register.js"></script>
-  <link rel="stylesheet" href="../css/navbar.css">
-  <title>Register</title>
+  <body>
+    <nav
+      style="background-color: #443d91; text-align: center;"
+      class="navbar navbar-expand-md navbar-dark fixed-top justify-content-center justify-items-center"
+    >
+      <a
+        class="navbar-brand"
+        style="font-family: tradingfont; font-size: 30px;"
+        href="#"
+      >
+        <img
+          style="position: relative; top: -9px;"
+          class="pm-5"
+          src="../logo/icon_trado.svg"
+          alt=""
+          width="35"
+        />
+        <span style="color: #080251;">TRA</span
+        ><span style="color: #db76c3;">DOLPHIN</span>
+      </a>
+    </nav>
+    <div class="container-fluid text-center" style="padding-top: 20px;">
 
-</head>
-
-<body>
-  <nav style=" background-color: #443D91; text-align: center;"
-  class="navbar navbar-expand-md navbar-dark fixed-top justify-content-center justify-items-center">
-  <a class="navbar-brand" style="font-family: tradingfont; font-size: 30px; " href="#">
-      <img style="position: relative; top: -9px;" class="pm-5" src="../logo/icon_trado.svg" alt="" width="35px"
-          height="auto">
-      <span style="color:#080251">TRA</span><span style="color: #DB76C3;">DOLPHIN</span>
-  </a>
-</nav>
-  <div class="container-fluid text-center" style="padding-top: 20px;">
-    <form class="form-register">
-      <!-- <img class="mb-4" src="/logo/icon_trado.svg" alt="" width="100" height="100"> -->
-      <h1 class="h3 mb-3 font-weight-normal">
-        Be part of our community
-      </h1>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputFirstname" class="sr-only">First Name</label>
-          <input type="text" id="inputEmail" class="form-control" placeholder="First Name" required autofocus>
+      <form id="registerForm" class="form-register">
+        <!-- <img class="mb-4" src="/logo/icon_trado.svg" alt="" width="100" height="100"> -->
+        <h1 class="h3 mb-3 font-weight-normal">
+          Be part of our community
+        </h1>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputFname" class="sr-only">First Name</label>
+            <input type="text" id="inputFname" class="form-control" placeholder="First Name"  required  autofocus/>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputLname" class="sr-only">Last Name</label>
+            <input type="text"  id="inputLname"  class="form-control"  placeholder="Last Name"/>
+          </div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="inputLastname" class="sr-only">Last Name</label>
-          <input type="text" id="inputLname" class="form-control" placeholder="Last Name" required autofocus>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input  type="email"  id="inputEmail"  class="form-control"  placeholder="Email address" required />
+          </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-12">
-          <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control " placeholder="Email address" required autofocus>
-        </div>
-      </div>
-      <div class="form-row" style="text-align: left;">
-        <div class="form-group col-md-12">
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-          <svg class="bi bi-eye-fill" id="eye-fill" type="button" onclick="myFunction()" width="20px" height="20px" viewBox="0 0 16 16" fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg">
-          <path id="path_1" d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
-         
-          <path id="path_3" fill-rule="evenodd"
-            d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
-          
-        </svg>
-        <text id="show password">Show Password</text>
-        </div>
-      </div>
-      <div class="form-row" style="text-align: left;">
-        <div class="form-group col-md-12">
-          <label for="inputPassword" class="sr-only">Confirm Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Confirm Password" required>
+        <div class="form-row" style="text-align: left;">
+          <div class="form-group col-md-12">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input
+              type="password"  id="inputPassword"  class="form-control"  placeholder="Password"  required/>
 
-          <svg class="bi bi-eye-fill" id="eye-fill" type="button" onclick="myFunction()" width="20px" height="20px" viewBox="0 0 16 16" fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg">
-          <path id="path_1" d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
-         
-          <path id="path_3" fill-rule="evenodd"
-            d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
-          
-        </svg>
-        <text id="show password">Show Password</text>
+          </div>
         </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group col-md-12">
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Create Account and login</button>
+        <div class="form-row" style="text-align: left;">
+          <div class="form-group col-md-12">
+            <label for="inputPassword" class="sr-only">Confirm Password</label>
+            <input
+              type="password" id="confirmPassword" class="form-control"  placeholder="Confirm Password" required/>
+          </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-12">
-          <a href="" style="text-decoration: none;"><button class="btn btn-lg btn-outline-primary btn-block" type="submit">Already have an
-              Account??</button></a>
+
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <button  class="btn btn-lg btn-primary btn-block" type="button" id="btn_register">
+              Create Account and login
+            </button>
+          </div>
         </div>
-      </div>
-    </form>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </div>
-
-</body>
-
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <a href="login.html"></a>
+			<button class="btn btn-lg btn-outline-primary btn-block"  type="button">
+                Already have an Account??
+             </button>
+          </div>
+        </div>
+      </form>
+      <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="  crossorigin="anonymous"
+      ></script>
+     
+      <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script src="../vendor/tradolphin/Tradolphin.js"></script>
+      <script src="../js/register.js"></script>
+    </div>
+  </body>
 </html>

@@ -1,96 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="../logo/icon_trado.svg">  
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
-
-
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/navbar.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../logo/icon_trado.svg"
+    />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../vendor/bootstrap/css/bootstrap-grid.min.css"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
     <title>Trdolphin</title>
-</head>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: #443d91;"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a
+        class="navbar-brand"
+        style="font-family: tradingfont; font-size: 30px;"
+        href="#"
+      >
+        <img
+          style="position: relative; top: -9px;"
+          class="pm-5"
+          src="../logo/icon_trado.svg"
+          alt=""
+          width="35"
+        />
+        <span style="color: #080251;">TRA</span
+        ><span style="color: #db76c3;">DOLPHIN</span>
+      </a>
 
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #443D91;">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" style="font-family: tradingfont; font-size: 30px; " href="#">
-            <img style="position: relative; top: -9px;" class="pm-5" src="../logo/icon_trado.svg" alt="" width="35px"
-                height="auto">
-            <span style="color:#080251">TRA</span><span style="color: #DB76C3;">DOLPHIN</span>
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Markets</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Trades</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About us</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0 text-center">
-                <div class="form-group col col-lg-6 col-md-12 col-12 mb-lg-0 col-md-2 mb-2">
-                    <button class="btn btn-outline-success" type="submit">Register</button>
-                </div>
-                <div class="form-group col col-lg-6 col-md-12 col-12">
-                    <button class="btn btn-outline-success" type="submit">Login</button>
-                </div>
-            </form>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="dashboard.html">Markets</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Aboutus.html">About us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 text-center">
+          <div
+            class="form-group col col-lg-6 col-md-12 col-12 mb-lg-0 col-md-2 mb-2"
+          >
+            <button class="btn btn-outline-success" type="submit">
+              Register
+            </button>
+          </div>
+          <div class="form-group col col-lg-6 col-md-12 col-12">
+            <button class="btn btn-outline-success" type="submit">Login</button>
+          </div>
+        </form>
+      </div>
     </nav>
-    
-    
-    <div class="container-fluid" style="height: 50%; background-color: #080251;" >
-        <div class="row" style="padding-top: 30px; padding-bottom: 3.5%;">
-            <div class="col-md-6 offset-md-3 col-sm-6 offset-sm-3 col-8 offset-2">
-              <div class="card text-center">
-                <div class="card-body">
-                  <h5 class="card-title col col-md-12" style="font-family: tradingfont; font-size: 50px;" > 
-                    <span style="color:#080251">TRA</span><span style="color: #DB76C3;">DOLPHIN</span> </h5>
-                  <p class="card-text"  >"Fake it until you make it" <br> - Someone who used Tradolphin</p>
-                  <a href="#" class="btn btn-outline-primary">Register</a>
-                  <a href="#" class="btn btn-outline-primary">Login</a>
-                </div>
-              </div>
+
+    <div
+      class="container-fluid"
+      style="height: 50%; background-color: #080251;"
+    >
+      <div class="row" style="padding-top: 30px; padding-bottom: 3.5%;">
+        <div class="col-md-6 offset-md-3 col-sm-6 offset-sm-3 col-8 offset-2">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5
+                class="card-title col col-md-12"
+                style="font-family: tradingfont; font-size: 50px;"
+              >
+                <span style="color: #080251;">TRA</span
+                ><span style="color: #db76c3;">DOLPHIN</span>
+              </h5>
+              <p class="card-text">
+                "Fake it until you make it" <br />
+                - Someone who used Tradolphin
+              </p>
+              <a href="register.html" class="btn btn-outline-primary">Register</a>
+              <a href="login.html" class="btn btn-outline-primary">Login</a>
             </div>
+          </div>
         </div>
-
-      
-    </div>  
-    <div class="container-fluid" style=" width: auto; margin: 25px; padding-top: 25px; background-color: rgba(219, 118, 195, 0.0);">
-        <div class="row text-center"> 
-                <div class="col col-md-4 col-12 mb-md-0 mb-3">
-                    <img class="mb-4 " src="../images/realtime_trading.png" alt="" width="150" height="auto">
-                    <h4 style="padding-bottom: 20px;">Real-time Trading</h4>
-                    <p>Real-time Trades with Fake Money</p>   
-                </div>
-                <div class="col col-md-4 col-12 mb-md-0 mb-3">
-                    <img class="mb-4 " src="../images/testnet_exchange.png" alt="" width="150" height="auto">
-                    <h4 style="padding-bottom: 20px;">Testnet exchange</h4>
-                    <p>A testnet exchange for everyone to learn about financial markets</p> 
-                </div>
-                <div class="col col-md-4 col-12 mb-md-0 mb-3">
-                    <img class="mb-4" src="../images/no_Risk.png" alt="" width="150" height="auto">
-                    <h4 style="padding-bottom: 20px;">NO Risk</h4>
-                    <p>Test your strategies without risk while looking at past trades and your equity curve</p> 
-                </div>
-        </div>
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
-
+    <div
+      class="container-fluid"
+      style="
+        width: auto;
+        margin: 25px;
+        padding-top: 25px;
+        background-color: rgba(219, 118, 195, 0);
+      "
+    >
+      <div class="row text-center">
+        <div class="col col-md-4 col-12 mb-md-0 mb-3">
+          <img
+            class="mb-4"
+            src="../images/realtime_trading.png"
+            alt=""
+            width="150"
+          />
+          <h4 style="padding-bottom: 20px;">Real-time Trading</h4>
+          <p>Real-time Trades with Fake Money</p>
+        </div>
+        <div class="col col-md-4 col-12 mb-md-0 mb-3">
+          <img
+            class="mb-4"
+            src="../images/testnet_exchange.png"
+            alt=""
+            width="150"
+          />
+          <h4 style="padding-bottom: 20px;">Testnet exchange</h4>
+          <p>
+            A testnet exchange for everyone to learn about financial markets
+          </p>
+        </div>
+        <div class="col col-md-4 col-12 mb-md-0 mb-3">
+          <img class="mb-4" src="../images/no_Risk.png" alt="" width="150" />
+          <h4 style="padding-bottom: 20px;">NO Risk</h4>
+          <p>
+            Test your strategies without risk while looking at past trades and
+            your equity curve
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/tradolphin/Tradolphin.js"></script>
+    <script src="../js/home.js"></script>
+  </body>
 </html>

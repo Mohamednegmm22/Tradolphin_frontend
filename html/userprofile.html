@@ -1,127 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="../logo/icon_trado.svg">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../logo/icon_trado.svg"
+    />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../vendor/bootstrap/css/bootstrap-grid.min.css"
+    />
     <title>User Profile</title>
 
-    <link rel="stylesheet" href="../css/userprofile.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-</head>
+    <link rel="stylesheet" href="../css/userprofile.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #443D91;">
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: #443d91;"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a
+        class="navbar-brand"
+        style="font-family: tradingfont; font-size: 30px;"
+        href="#"
+      >
+        <img
+          style="position: relative; top: -9px;"
+          class="pm-5"
+          src="../logo/icon_trado.svg"
+          alt=""
+          width="35"
+        />
+        <span style="color: #080251;">TRA</span
+        ><span style="color: #db76c3;">DOLPHIN</span>
+      </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" style="font-family: tradingfont; font-size: 30px; " href="#">
-            <img style="position: relative; top: -9px;" class="pm-5" src="../logo/icon_trado.svg" alt="" width="35px"
-                height="auto">
-            <span style="color:#080251">TRA</span><span style="color: #DB76C3;">DOLPHIN</span>
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Markets</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Trades</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About us</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-
-            </form>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="dashboard.html">Markets</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Aboutus.html">About us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0"></form>
+      </div>
     </nav>
-    <div class="container text-center" style="padding:60px;">
-        <h1 style="text-align: left; padding-bottom: 20px;">User Profile</h1>
+    <div class="container text-center" style="padding: 60px;">
+      <h1 style="text-align: left; padding-bottom: 20px;">User Profile</h1>
 
-        <div class="row">
-            <div class="card col col-lg-4 col-md-12 col-12 mb-md-2 mb-2" style="height:100%">
-                <div class="card-body">
-                    <img src="../images/profilepitcure.jpg" alt="profilepitcure" class="profilepitcure">
-                    <h4 class="card-text mt-2">Vanessa Moni</h4>
-                    <p class="card-text">Vanessa88.Moni@gmail.com</p>
-                    <hr>
-                    <h6 style="font-weight: 400; opacity: 0.8; text-align: left;">Description</h6>
-                    <p style="text-align: justify; opacity: 0.9; font-weight: 400;">Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Excepturi consectetur
-                        blanditiis ratione illum. Laboriosam, culpa voluptatum mollitia ex
-                        nobis dolorum perspiciatis repellat corrupti quasi labore nam ipsam consequuntur incidunt
-                        distinctio.</p>
-                </div>
-            </div>
-
-            <div class="card col col-lg-7 col-md-12 col-12 offset-lg-1" style="text-align: left;">
-                <div class="card-body">
-                    <h4 class="card-text" style="text-align: left;">Account Details</h4>
-                    <hr>
-                    <form>
-                        <div class="row col">
-                            <div class="form-group col">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
-                            </div>
-                        </div>
-
-                        <div class="row col">
-                            <div class="form-group col col-12 col-md-6">
-                                <label for="exampleInputname">First name</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="form-group col col-12 col-md-6">
-                                <label for="exampleInputname">Last name</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1">
-                            </div>
-                        </div>
-
-                        <div class="row col">
-                            <div class="form-group col">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                        </div>
-                        <div class="form-group col col-md-6">
-                            <button type="submit" class="btn btn-outline-success">Update Account</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
- 
-            <div class="card col col-lg-7 col-md-12 offset-lg-5 mt-lg-5 mt-md-2 mt-sm-2 mt-2" style="text-align: left;">
-                <div class="card-body">
-                    <div class="row col">
-                    <div class="form-group col col-md-8">
-                        <h6 style="font-weight: 400; opacity: 0.8; text-align: left; padding-bottom: 20px;">Change Image</h6>
-                        <label for="exampleFormControlFile1">Upload:</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    </div>
-                    <div class="form-group col col-md-3 offset-md-1">
-                        <img src="../images/profilepitcure.jpg" alt="profilepitcure" class="profilepitcure">
-                        <small>Current Image</small>
-                    </div>
-
-                    </div>
-
-                </div>
-            </div>
+      <div class="row">
+        <div
+          class="card col col-lg-4 col-md-12 col-12 mb-md-2 mb-2"
+          style="height: 100%;"
+        >
+          <div class="card-body">
+            <img
+              src="../images/profilepitcure.jpg"
+              alt="profilepitcure"
+              class="profilepitcure"
+            />
+            <h4 class="card-text mt-2">Vanessa Moni</h4>
+            <p class="card-text">Vanessa88.Moni@gmail.com</p>
+            <hr />
+            <h6 style="font-weight: 400; opacity: 0.8; text-align: left;">
+              Description
+            </h6>
+            <p style="text-align: justify; opacity: 0.9; font-weight: 400;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              consectetur blanditiis ratione illum. Laboriosam, culpa voluptatum
+              mollitia ex nobis dolorum perspiciatis repellat corrupti quasi
+              labore nam ipsam consequuntur incidunt distinctio.
+            </p>
+          </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
 
+        <div
+          class="card col col-lg-7 col-md-12 col-12 offset-lg-1"
+          style="text-align: left;"
+        >
+          <div class="card-body">
+            <h4 class="card-text" style="text-align: left;">Account Details</h4>
+            <hr />
+            <form>
+              <div class="row col">
+                <div class="form-group col">
+                  <label for="inputEmail">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    aria-describedby="inputEmail"
+                  />
+                </div>
+              </div>
+
+              <div class="row col">
+                <div class="form-group col col-12 col-md-6">
+                  <label for="inputFname">First name</label>
+                  <input type="text" class="form-control" id="inputFname" />
+                </div>
+                <div class="form-group col col-12 col-md-6">
+                  <label for="inputLname">Last name</label>
+                  <input type="text" class="form-control" id="inputLname" />
+                </div>
+              </div>
+
+              <div class="row col">
+                <div class="form-group col">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+              </div>
+              <div class="form-group col col-md-6">
+                <button type="submit" class="btn btn-outline-success">
+                  Update Account
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="card col col-lg-7 col-md-12 offset-lg-5 mt-lg-5 mt-md-2 mt-sm-2 mt-2"
+          style="text-align: left;"
+        >
+          <div class="card-body">
+            <div class="row col">
+              <div class="form-group col col-md-8">
+                <h6
+                  style="
+                    font-weight: 400;
+                    opacity: 0.8;
+                    text-align: left;
+                    padding-bottom: 20px;
+                  "
+                >
+                  Change Image
+                </h6>
+                <label for="exampleFormControlFile1">Upload:</label>
+                <input
+                  type="file"
+                  class="form-control-file"
+                  id="exampleFormControlFile1"
+                />
+              </div>
+              <div class="form-group col col-md-3 offset-md-1">
+                <img
+                  src="../images/profilepitcure.jpg"
+                  alt="profilepitcure"
+                  class="profilepitcure"
+                />
+                <small>Current Image</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>

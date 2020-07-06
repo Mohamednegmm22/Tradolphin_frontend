@@ -1,78 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="../logo/icon_trado.svg">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../logo/icon_trado.svg"
+    />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../vendor/bootstrap/css/bootstrap-grid.min.css"
+    />
     <title>Deposit</title>
 
-    <link rel="stylesheet" href="../css/deposit.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-</head>
+    <link rel="stylesheet" href="../css/deposit.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #443D91;">
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: #443d91;"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a
+        class="navbar-brand"
+        style="font-family: tradingfont; font-size: 30px;"
+        href="#"
+      >
+        <img
+          style="position: relative; top: -9px;"
+          class="pm-5"
+          src="../logo/icon_trado.svg"
+          alt=""
+          width="35"
+        />
+        <span style="color: #080251;">TRA</span
+        ><span style="color: #db76c3;">DOLPHIN</span>
+      </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" style="font-family: tradingfont; font-size: 30px; " href="#">
-            <img style="position: relative; top: -9px;" class="pm-5" src="../logo/icon_trado.svg" alt="" width="35px"
-                height="auto">
-            <span style="color:#080251">TRA</span><span style="color: #DB76C3;">DOLPHIN</span>
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Markets</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Trades</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About us</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-
-            </form>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="dashboard.html">Markets</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Aboutus.html">About us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0"></form>
+      </div>
     </nav>
-    <div class="container-fluid d-flex justify-content-center" style="padding-top: 80px;">
-        <div class="row">
-            <div class="col col-md-3" style="max-width: 100%; height:auto;">
-                <img src="../images/tenor.gif" class="img-fluid" alt="tenorgif">
-            </div>
-            <div class="col col-md-6 text-center">
-                <div class="row mt-5">
-                    <div class="countdown-timer col col-md-12 col-12">
-                        <div class="title">
-                            <p>OH NO you lost all your Money? You can claim some fake money again in:</p>
-                        </div>
-                        <div class="counter d-flex justify-content-center">
-                            <h1 id="time"></h1>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col col-md-3"
-                style="right: 0px; size: auto; -webkit-transform: scaleX(-1); transform: scaleX(-1); max-width: 100%; height:auto;">
-                <img src="../images/tenor.gif" class="img-fluid" alt="tenorgif">
-            </div>
-
+    <div
+      class="container-fluid d-flex justify-content-center"
+      style="padding-top: 80px;"
+    >
+      <div class="row">
+        <div class="col col-md-3" style="max-width: 100%; height: auto;">
+          <img src="../images/tenor.gif" class="img-fluid" alt="tenorgif" />
         </div>
-        <script src="../js/deposit.js"></script>
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+        <div class="col col-md-6 text-center">
+          <div class="row mt-5">
+            <div class="countdown-timer col col-md-12 col-12">
+              <div class="title">
+                <p>
+                  OH NO you lost all your Money? You can claim some fake money
+                  again in:
+                </p>
+              </div>
+              <div class="counter d-flex justify-content-center">
+                <h1 id="time">loading...</h1>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div
+          class="col col-md-3"
+          style="
+            right: 0px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            max-width: 100%;
+            height: auto;
+          "
+        >
+          <img src="../images/tenor.gif" class="img-fluid" alt="tenorgif" />
+        </div>
+      </div>
+    </div>
+    <script src="../js/deposit.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>

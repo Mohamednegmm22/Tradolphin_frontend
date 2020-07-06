@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="../logo/icon_trado.svg">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../logo/icon_trado.svg"
+    />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../vendor/bootstrap/css/bootstrap-grid.min.css"
+    />
 
-   
     <title>login</title>
-      <link href="../css/login.css" rel="stylesheet">
-      <link rel="stylesheet" href="../css/navbar.css">
-</head>
-<body class="text-center">
-  <nav style=" background-color: #443D91; text-align: center;"
-  class="navbar navbar-expand-md navbar-dark fixed-top justify-content-center justify-items-center">
-  <a class="navbar-brand" style="font-family: tradingfont; font-size: 30px; " href="#">
-      <img style="position: relative; top: -9px;" class="pm-5" src="../logo/icon_trado.svg" alt="" width="35px"
-          height="auto">
-      <span style="color:#080251">TRA</span><span style="color: #DB76C3;">DOLPHIN</span>
-  </a>
-</nav>
-<div class="container-fluid">
-    <form class="form-signin">
-    <!--<img class="mb-4" src="/logo/icon_trado.svg" alt="" width="70" height="70">-->
-    <h1 class="h3 mb-4 font-weight-normal">User Login</h1>
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <div class="checkbox mb-3" style="text-align: left; padding-left: 2px;">
-      <label >
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
+    <link href="../css/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+  </head>
+  <body class="text-center">
+    <nav
+      style="background-color: #443d91; text-align: center;"
+      class="navbar navbar-expand-md navbar-dark fixed-top justify-content-center justify-items-center"
+    >
+      <a
+        class="navbar-brand"
+        style="font-family: tradingfont; font-size: 30px;"
+        href="#"
+      >
+        <img
+          style="position: relative; top: -9px;"
+          class="pm-5"
+          src="../logo/icon_trado.svg"
+          alt=""
+          width="35"
+        />
+        <span style="color: #080251;">TRA</span
+        ><span style="color: #db76c3;">DOLPHIN</span>
+      </a>
+    </nav>
+    <div class="container-fluid">
+      <form class="form-signin">
+        <!--<img class="mb-4" src="/logo/icon_trado.svg" alt="" width="70" height="70">-->
+        <h1 class="h3 mb-4 font-weight-normal">User Login</h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="inputEmail"
+          class="form-control mb-3"
+          placeholder="Email address"
+          required
+          autofocus
+        />
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input
+          type="password"
+          id="inputPassword"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <div class="checkbox mb-3" style="text-align: left; padding-left: 2px;">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" id="btn_login" style="margin-bottom: 20px;" type="button">
+          Sign in
+        </button>
+
+        <a href="register.html">
+          
+        </a>
+		<button class="btn btn-lg btn-outline-primary btn-block" type="button">
+            Don't have an Account??
+          </button>
+      </form>
+      <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"
+      ></script>
+      <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+	  <script src="../js/login.js"></script>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-
-    <button class="btn btn-lg btn-outline-primary btn-block" type="submit">Don't have an Account??</button>
-  </form>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</div>
-
-</body>
+  </body>
 </html>

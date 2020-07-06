@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" type="image/x-icon" href="../logo/icon_trado.svg">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../logo/icon_trado.svg"
+    />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../vendor/bootstrap/css/bootstrap-grid.min.css"
+    />
     <title>Wallet</title>
-    <link rel="stylesheet" href="../css/wallet.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-</head>
+    <link rel="stylesheet" href="../css/wallet.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #443D91;">
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: #443d91;"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a
+        class="navbar-brand"
+        style="font-family: tradingfont; font-size: 30px;"
+        href="#"
+      >
+        <img
+          style="position: relative; top: -9px;"
+          class="pm-5"
+          src="../logo/icon_trado.svg"
+          alt=""
+          width="35"
+        />
+        <span style="color: #080251;">TRA</span
+        ><span style="color: #db76c3;">DOLPHIN</span>
+      </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" style="font-family: tradingfont; font-size: 30px; " href="#">
-            <img style="position: relative; top: -9px;" class="pm-5" src="../logo/icon_trado.svg" alt="" width="35px"
-                height="auto">
-            <span style="color:#080251">TRA</span><span style="color: #DB76C3;">DOLPHIN</span>
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Markets</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Trades</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About us</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-
-            </form>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="dashboard.html">Markets</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Aboutus.html">About us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0"></form>
+      </div>
     </nav>
     <!--    <div style="padding-top: 50px;">
             <div class="header">
@@ -53,79 +75,95 @@
       </div>
     </div> -->
     <div class="container-fluid mb-4" style="padding-top: 80px;">
+      <div class="row d-flex justify-content-center">
+        <div class="card text-center col col-md-8">
+          <button
+            type="button"
+            class="btn btn-outline-success btn-sm"
+            style="position: absolute; right: 20px; top: 10px;"
+          >
+            Deposit
+          </button>
 
-        <div class="row d-flex justify-content-center">
-            <div class="card text-center col col-md-8 ">
-                <button type="button" class="btn btn-outline-success btn-sm "
-                    style="position: absolute; right: 20px; top: 10px;">Deposit</button>
+          <select
+            class="custom-select"
+            id="inputGroupSelect01"
+            style="
+              font: caption;
+              width: 80px;
+              height: auto;
+              position: absolute;
+              left: 20px;
+              top: 10px;
+              font-size: 10px;
+            "
+          >
+            <option value="BTC" class="badge badge-danger"> BTC</option>
+            <option value="LTC" class="badge badge-primary">LTC</option>
+            <option value="RBI" class="badge badge-warning">RBI</option>
+            <option value="DOGE">DOGE</option>
+          </select>
 
-                <select class="custom-select" id="inputGroupSelect01"  
-                style="font:caption; width:80px; height: auto; position: absolute; left: 20px; top: 10px; font-size: 10px;">
-                    <option value="BTC"> <span class="badge badge-danger">BTC</span></option>
-                    <option value="LTC">LTC</option>
-                    <option value="RBI">RBI</option>
-                    <option value="DOGE">DOGE</option>
-                  </select>
-
-
-                <div class="card-body">
-                    <h3 class="card-title mb-4">Balance</h3>
-                    <p class="card-text" style="font-weight:500; font-size:20px;">0.00000000
-                        <span class="badge badge-danger">BTC</span></p>
-                    €0,00
-                </div>
-
-            </div>
+          <div class="card-body">
+            <h3 class="card-title mb-4">Balance</h3>
+            <p class="card-text" style="font-weight: 500; font-size: 20px;">
+              0.00000000 <span class="badge badge-danger">BTC</span>
+            </p>
+            €0,00
+          </div>
         </div>
-        <div class="row justify-content-center mt-5">
-            <div class="card col col-md-8">
-                <div class="card-body">
-                    <table class="table table-responsive-md"">
-                        <thead>
-                            <tr>
-                                <th scope=" col col-md-6">
-                        </th>
-                        <th scope="col col-md-3">Balance</th>
-                        <th scope="col col-md-3">Amount</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="badge badge-danger">BTC</span> Bitcoin</td>
-                                <td>200</td>
-                                <td>€8942</td>
-                            </tr>
-                            <tr>
-                                <td><span class="badge badge-primary">LTC</span> Litecoin</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td><span class="badge badge-warning">RBI</span> Raiffeisen International</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td><span class="badge badge-success">DOGE</span> Dogecoin</td>
-                                <td>0</td>
-                                <td>0.5</td>
-                            </tr>
-
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="card col col-md-8">
+          <div class="card-body">
+            <table class="table table-responsive-md">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Balance</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="badge badge-danger">BTC</span> Bitcoin</td>
+                  <td>200</td>
+                  <td>€8942</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-primary">LTC</span> Litecoin</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="badge badge-warning">RBI</span> Raiffeisen
+                    International
+                  </td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="badge badge-success">DOGE</span> Dogecoin
+                  </td>
+                  <td>0</td>
+                  <td>0.5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-
-
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../js/wallet.js"></script>
-</body>
-
+  </body>
 </html>

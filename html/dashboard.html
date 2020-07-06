@@ -1,292 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../logo/icon_trado.svg"
+    />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../vendor/bootstrap/css/bootstrap-grid.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="../logo/icon_trado.svg">
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
-
-
-  <title>Home </title>
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+    <title>Home</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
-    }
-  </style>
 
-  <link href="../css/home.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/dashboard.css">
-</head>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #443D91;">
+    <link href="../css/home.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" style="font-family: tradingfont; font-size: 30px; " href="#">
-      <img style="position: relative; top: -9px;" class="pm-5" src="../logo/icon_trado.svg" alt="" width="35px"
-        height="auto">
-      <span style="color:#080251">TRA</span><span style="color: #DB76C3;">DOLPHIN</span>
-    </a>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: #443d91;"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a
+        class="navbar-brand"
+        style="font-family: tradingfont; font-size: 30px;"
+        href="#"
+      >
+        <img
+          style="position: relative; top: -9px;"
+          class="pm-5"
+          src="../logo/icon_trado.svg"
+          alt=""
+          width="35"
+        />
+        <span style="color: #080251;">TRA</span
+        ><span style="color: #db76c3;">DOLPHIN</span>
+      </a>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Markets</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Trades</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">About us</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-
-  <div class="container-fluid">
-    <div class="row mb-2">
-      <div class="card col col-md-3 col-sm-12 col-12 mb-2">
-        <div class=" card-body">
-          <h5 class="mb-2">Markets</h5>
-          <div class="table-responsive">
-            <table class="table table-sm">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Price</th>
-                  <th>Volume</th>
-                  <th>change</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-        </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="wallet.html">Wallet</a>
+          </li>
+		  <li class="nav-item active">
+            <a class="nav-link" href="deposit.html">Deposit</a>
+          </li>
+		  <li class="nav-item active">
+            <a class="nav-link" href="userprofile.html">Profile</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Aboutus.html">About us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
       </div>
-      <div class="card col col-md-6 col-12 mb-2">
-        <div class="card-body">
-          <h5>Tradingview</h5>
-          <div class="btn-toolbar col offse mb-2 mb-md-0 d-flex justify-content-end">
-            <div class="btn-group mr-2">
-              <button type="button" class="btn btn-sm btn-outline-success">Share</button>
-              <button type="button" class="btn btn-sm btn-outline-success">Export</button>
-            </div>
-            <button type="button" class="btn btn-sm btn-outline-success dropdown-toggle">
-              <span data-feather="calendar"></span>
-              This week
-            </button>
-          </div>
-          <canvas class="my-5 w-100" id="myChart" width="900" height="380"></canvas>
-        </div>
-      </div>
-      <div class="card col col-md-3 col-12 mb-2">
-        <div class=" card-body">
-          <h5 class="mb-2">Tradehistory</h5>
-          <div class="table-responsive">
-            <table class="table table-sm">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Price</th>
-                  <th>Amount</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+    </nav>
 
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card col col-md-4 col-12 mb-2">
-        <div class="card-body">
-          <h5>Buy Orders</h5>
-          <p style="position: absolute; right: 15px; top:23px"> BTC: 0.000000000</p>
-          <div class="table-responsive">
-            <table class="table table-sm">
-              <thead>
-                <tr>
-                  <th>Price</th>
-                  <th>Amount</th>
-                  <th>Total</th>
-                  <th>Sum</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="col col-md-4 col-12 mb-2">
-        <div class="card mb-2">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="card col col-md-3 col-sm-12 col-12 mb-2">
           <div class="card-body">
-            <h5>Buy</h5>
-            <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Amount</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-prepend">
-                <span class="input-group-text">KMD</span>
-              </div>
+            <h5 class="mb-2">Markets</h5>
+            <div class="table-responsive">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Volume</th>
+                    
+                  </tr>
+                </thead>
+                <tbody id="market"></tbody>
+              </table>
             </div>
-            <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                <span class="input-group-text ">Price</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-prepend">
-                <span class="input-group-text">BTC</span>
-              </div>
-            </div>
-            <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Sum</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-prepend">
-                <span class="input-group-text">BTC</span>
-              </div>
-            </div>
-            <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Fee</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-prepend">
-                <span class="input-group-text">BTC</span>
-              </div>
-            </div>
-            <hr style="margin: 10px;">
-            <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Total</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-prepend">
-                <span class="input-group-text">BTC</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn-success mt-2">Buy</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card col col-md-6 col-12 mb-2">
           <div class="card-body">
-            <h5>Sell</h5>
-            <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Amount</span>
+            <h5>Tradingview</h5>
+            <div
+              class="btn-toolbar col offse mb-2 mb-md-0 d-flex justify-content-end"
+            >
+				<div class="btn-group mr-2">
+					<select id="type_option" class="form-control">
+						<option value = "0">Open</option>
+						<option value = "1">High</option>
+						<option value = "2">Low</option>
+						<option value = "3">Close</option>
+					</select>
+				</div>
+              <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-success">
+                  Share
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-success">
+                  Export
+                </button>
               </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-prepend">
-                <span class="input-group-text">KMD</span>
-              </div>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success dropdown-toggle"
+              >
+                <span data-feather="calendar"></span>
+                This week
+              </button>
             </div>
-            <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                <span class="input-group-text ">Price</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-prepend">
-                <span class="input-group-text">BTC</span>
-              </div>
-            </div>
-            <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Sum</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-prepend">
-                <span class="input-group-text">BTC</span>
-              </div>
-            </div>
-            <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Fee</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-prepend">
-                <span class="input-group-text">BTC</span>
-              </div>
-            </div>
-            <hr style="margin: 10px;">
-            <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Total</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-prepend">
-                <span class="input-group-text">BTC</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn-info mt-2">Sell</button>
+            <canvas
+              class="my-5 w-100"
+              id="myChart"
+              width="900"
+              height="380"
+            ></canvas>
           </div>
         </div>
-
+        <div class="card col col-md-3 col-12 mb-2">
+          <div class="card-body">
+            <h5 class="mb-2">Tradehistory</h5>
+            <div class="table-responsive">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+					<th>Type</th>
+                  </tr>
+                </thead>
+                <tbody id="order"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card col col-md-4 col-12 mb-2">
-        <div class="card-body">
-          <h5>Sell Orders</h5>
-          <p style="position: absolute; right: 15px; top:23px"> BTC: 0.000000000</p>
-          <div class="table-responsive">
-            <table class="table table-sm">
-              <thead>
-                <tr>
-                  <th>Price</th>
-                  <th>Amount</th>
-                  <th>Total</th>
-                  <th>Sum</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+      <div class="row">
+        <div class="card col col-md-4 col-12 mb-2">
+          <div class="card-body">
+            <h5>Buy Orders</h5>
+            <p style="position: absolute; right: 15px; top: 23px;">
+              BTC: 0.000000000
+            </p>
+            <div class="table-responsive">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th>Price</th>
+                    <th>Amount</th>
+                    <th>Total</th>
+                    <th>Sum</th>
+                  </tr>
+                </thead>
+                <tbody id="buy"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-12 mb-2">
+          <div class="card mb-2">
+            <div class="card-body">
+              <h5>Buy</h5>
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Amount</span>
+                </div>
+                <input
+                  type="text" id="buy_amount"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">BTC</span>
+                </div>
+              </div>
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Price</span>
+                </div>
+                <input
+                  type="text" id="buy_price"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">BTC</span>
+                </div>
+              </div>
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Sum</span>
+                </div>
+                <input
+                  type="text" id="buy_sum"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">BTC</span>
+                </div>
+              </div>
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Fee</span>
+                </div>
+                <input
+                  type="text" id="buy_fee"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">BTC</span>
+                </div>
+              </div>
+              <hr style="margin: 10px;" />
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Total</span>
+                </div>
+                <input
+                  type="text" id="buy_total"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">BTC</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn-success mt-2" id="btn_buy">Buy</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5>Sell</h5>
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Amount</span>
+                </div>
+                <input
+                  type="text" id="sell_amount"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">BTC</span>
+                </div>
+              </div>
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Price</span>
+                </div>
+                <input
+                  type="text" id="sell_price"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">BTC</span>
+                </div>
+              </div>
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Sum</span>
+                </div>
+                <input
+                  type="text" id="sell_sum"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">BTC</span>
+                </div>
+              </div>
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Fee</span>
+                </div>
+                <input
+                  type="text" id="sell_fee"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">BTC</span>
+                </div>
+              </div>
+              <hr style="margin: 10px;" />
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Total</span>
+                </div>
+                <input
+                  type="text" id="sell_total"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">BTC</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn-info mt-2" id="btn_sell">Sell</button>
+            </div>
+          </div>
+        </div>
+        <div class="card col col-md-4 col-12 mb-2">
+          <div class="card-body">
+            <h5>Sell Orders</h5>
+            <p style="position: absolute; right: 15px; top: 23px;">
+              BTC: 0.000000000
+            </p>
+            <div class="table-responsive">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th>Price</th>
+                    <th>Amount</th>
+                    <th>Total</th>
+                    <th>Sum</th>
+                  </tr>
+                </thead>
+                <tbody id="sell"></tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <!-- 
+    <!-- 
   <div class="container">
     <main role="main" class="col-md-10 ml-sm-auto col-lg-12 px-md-4">
       <div class="row">
@@ -444,20 +528,15 @@
     </div>
 
   </div>-->
-
-  </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script>
-    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-  </script>
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-  <script src="../js/dashboard.js"></script>
-
-</body>
-
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"
+      ></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="../js/dashboard.js"></script>
+	
+  </body>
 </html>
